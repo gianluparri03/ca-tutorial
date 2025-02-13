@@ -2,6 +2,7 @@
 \usepackage[english]{babel}
 \usepackage{float}
 \usepackage{graphicx}
+\usepackage{hyperref}
 
 \renewcommand{\familydefault}{\sfdefault}
 
@@ -20,7 +21,7 @@
 
     \tableofcontents
     \vfill
-    \noindent For errors and suggestions you can write at \mbox{info@cucinassistant.com}.
+    \noindent For errors and suggestions you can write at \href{mailto:info@cucinassistant.com}{\mbox{info@cucinassistant.com}}.
 
 
 
@@ -29,8 +30,8 @@
     Since the last version (\emph{5.0, Patata}) CucinAssistant had the following changes
 
     \begin{itemize}
-        \item Multi language UI
-        \item New recipes section
+        \item Multi language UI [\ref{changelang}]
+        \item New recipes section [\ref{recipes}]
         \item Added a button for adding articles in multiple storage sections
         \item Non integer quantities for storage articles
         \item Now it shows a message when the order of the articles changes while you're editing them
@@ -41,28 +42,27 @@
 
     \chapter{Introduction}
 
-    \section{Changing the language}
+    \section{Changing the language} \label{changelang}
 
-    If, when opened, CucinAssistant was in a different language, you could change it\footnote{The new language
-    will be set in the device only, it's not saved in your account. Therefore, if you have a shared account, you
-    could use it in different languages} anytime 
+    If, when opened, CucinAssistant was in a different language, you could change it\footnote{The new language will be set in the device only, it's
+    not saved in your account. Therefore, if you have a shared account, you could use it in different languages} anytime.
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.45\textwidth]{assets/nav.png}
-        \caption{Navigation barl on the left (in most of the pages) there is a the home button; on the right, \emph{in every page} there
-        is the \emph{change language} button.}
+        \caption{Navigation barl on the left (in most of the pages) there is a the home button; on the right, \emph{in every page} there is the
+        \emph{change language} button.}
     \end{figure}
 
     \section{Sign up and sign in}
 
     Now it's time to sign in.
 
-    Once adjusted the language, it's time to sign in.
-    If you already have an account you can fill the form on the sign in page straight away; on the other hand, if this is your first
-    time on CucinAssistant, you can sign up using the button below.
-    If you have an account, but you've lost your username and/or your password, you can use the \emph{Forgot password} button, that will
-    send you an email containing both the username and a link to reset your password.
+    If you already have an account you can fill the form on the sign in page straight away; on the other hand, if this is your first time on
+    CucinAssistant, you can sign up using the button below.
+
+    If you have an account, but you've lost your username and/or your password, you can use the \emph{Forgot password} button, that will send you an
+    email containing both the username and a link to reset your password.
 
     \begin{figure}[H]
         \centering
@@ -80,11 +80,11 @@
 
     \section{Settings}
 
-    The settings page contains a button to sign out, some buttons to change your username, email or password, and a button to permanently delete
-    your account.
+    The settings page contains a button to sign out, some buttons to change your username, email or password, and a button to permanently delete your
+    account.
 
-    There is also a button to change the language of the emails: in fact, you could also decide to see the website in a language, and
-    receive your emails in another one.
+    There is also a button to change the language of the emails: in fact, you could also decide to see the website in a language, and receive your
+    emails in another one.
 
 
 
@@ -94,7 +94,7 @@
 
     \section{Overview}
 
-    From your homepage, with the \emph{Menus} button, you can see your menus and create new ones.
+    From your homepage, with the \emph{Menus} button, you can see your menus (in order of creation) and create new ones.
 
     \begin{figure}[H]
         \centering
@@ -102,8 +102,7 @@
         \caption{The menus dashboard}
     \end{figure}
 
-    Once clicked on a menu, you can see its content, and if you want edit or clone it. To delete it, you have to
-    click the \emph{Edit} button first.
+    Once clicked on a menu, you can see its content, and if you want edit or clone it. To delete it, you have to click the \emph{Edit} button first.
 
     \begin{figure}[H]
         \centering
@@ -116,13 +115,13 @@
     \chapter{Storage}
 
     This is by far the most articulated part of CucinAssistant.
-    Inside the storage, divided in sections, you can store articles, that are things you have in your kitchen, with a name,
-    an optional expiration date and an optional quantity.
+
+    Inside the storage, divided in sections, you can store articles, that are things you have in your kitchen, with a name, an optional expiration
+    date and an optional quantity\footnote{Also a not integer one, like 1.5.}.
 
     \section{Sections}
 
-    As said before, the articles can be grouped into sections, which you will see by clicking the \emph{Storage} button on
-    your home page.
+    As said before, the articles can be grouped into sections, which you will see by clicking the \emph{Storage} button on your home page.
 
     \begin{figure}[H]
         \centering
@@ -130,12 +129,13 @@
         \caption{The storage dashboard}
     \end{figure}
 
-    You can create new sections with the button in the dashboard; to edit (or delete them) you have to open them and click the 
-    \emph{Edit section} button.
+    You can create new sections with the button in the dashboard; to edit (or delete them) you have to open them and click the \emph{Edit section}
+    button.
 
     \section{Articles}
 
     You can see the articles of each section by clicking on it (and, if you want, search for a name).
+
     Articles are ordered by their expiration date; the expired ones will have a red band on the left, instead of the common orange one.
 
     \begin{figure}[H]
@@ -144,8 +144,8 @@
         \caption{An example section}
     \end{figure}
 
-    You can add articles both from inside a section and outside a section; in the latter case, for each article added you'll also have
-    to specify in which section to put each article.
+    You can add articles both from inside a section and outside a section; in the latter case, for each article added you'll also have to specify in
+    which section to put each article.
 
     Remember that an article is identified by its name and expiration, so if you'll try to add an article that you already have in storage,
     CucinAssistant will add the quantities, and not create duplicates. On the other hand, if the expiration date differs, it will create another
@@ -183,20 +183,21 @@
         \caption{A shopping list}
     \end{figure}
 
-    When you buy something, you can click on the checkbox at the left of the entry, and it will become selected, but will remain on the list;
-    to remove it permanently you have to click the \emph{Delete selected}.
+    When you buy something, you can click on the checkbox at the left of the entry, and it will become selected\footnote{As everything on
+    CucinAssistant, the change will be seen on every device}, but will remain on the list; to remove it permanently you have to click the
+    \emph{Delete selected}.
 
     To add new items you can click the \emph{Add entries} button; to edit one of them, just click on its name.
 
 
 
-    \chapter{Recipes}
+    \chapter{Recipes} \label{recipes}
 
     A recipe has a name (the only compulsory field), and can have a rating (0.5 to 5.0 stars), some ingredients, some directions and some notes.
 
     \section{Overview}
 
-    When you open the \emph{Recipes} you'll see all the saved recipies you have and a button to create new ones.
+    When you click the \emph{Recipes} button you'll see all the saved recipies you have and a button to create new ones.
 
     \begin{figure}[H]
         \centering
@@ -214,6 +215,6 @@
 
     To edit or delete it, just click on the \emph{Edit} button.
 
-    To hide the stars you can set the stars number to 0. When writing ingredients or directions, remember to write them in multiple lines in order
-    to see the numbers/dots correctly.
+    To hide the stars you can set the stars number to 0. When writing ingredients or directions, remember to write them in multiple lines in order to
+    see the numbers/dots correctly.
 \end{document}
