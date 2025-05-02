@@ -11,7 +11,7 @@
     \title{
         \includegraphics[width=0.4\textwidth]{assets/logo.png}\\
         [1cm]CucinAssistant: Guida all'utilizzo\\
-        \large aggiornata alla versione \emph{6.0 (Zucchina)}
+        \large aggiornata alla versione \emph{7 (Ciliegia)}
     }
     \author{Gianluca Parri}
     \date{\today}
@@ -27,17 +27,21 @@
 
     \chapter{Novità}
     
-    Le modifiche apportate a CucinAssistant dall'ultima versione (\emph{5.0, Patata}) sono qui riassunte:
+    Le modifiche apportate a CucinAssistant dall'ultima versione (\emph{6, Zucchina}) sono qui riassunte:
 
     \begin{itemize}
-        \item Interfaccia utente multilingua [\ref{changelang}]
-        \item Nuova sezione ricette [\ref{recipes}]
-        \item Aggiunto un pulsante per poter inserire articoli in dispensa in diverse sezioni
-        \item Possibilità di impostare quantità non intere negli articoli della dispensa
-        \item Aggiunto un avviso quando, modificando la scadenza di un articolo, l'ordine cambia
-        \item Aggiunta di una \emph{rotella che gira}\footnote{termine tecnico} durante il caricamento
+		\item Condivisione di ricette (\ref{recipesharing})
+		\item Visione generale della dispensa (\ref{storagearticles})
+		\item Possibilità di spostare gli articoli in altre sezioni (\ref{movearticle})
+		\item Aggiunti pulsanti \emph{Stampa}
+		\item Possibilità di disiscriversi dalla newsletter (\ref{newsletter})
     \end{itemize}
 
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.45\textwidth]{assets/ciliegie.jpg}
+		\caption{\emph{Ciliegie}. Foto da \href{https://upload.wikimedia.org/wikipedia/commons/9/94/Black_Che.jpg}{qui}.}
+    \end{figure}
 
 
     \chapter{Introduzione}
@@ -82,11 +86,16 @@
     \section{Impostazioni}
 
     Nelle impostazioni, oltre ad il tasto per disconnettervi, troverete anche dei bottoni per cambiare nome utente, email e password, eliminare
-    l'account in maniera definitiva, e inoltre cambiare la lingua delle email. 
+    l'account in maniera definitiva, ed un altro per accedere alle impostazioni delle email.
 
-    Quest'ultima è un'impostazione a parte rispetto alla lingua di visualizzazione del sito, dunque potreste decidere di impostarla ad una lingua
-    diversa.
+	\label{newsletter}Quest'ultimo pulsante vi porterà in una pagina in cui sarà possibile iscriversi o disiscriversi dalla newsletter, e impostare
+	la lingua di tutte le email che vi arriveranno, che è indipendente dalla lingua di visualizzazione del sito.
 
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.45\textwidth]{assets/it/settings.png}
+        \caption{Pagina di impostazioni}
+    \end{figure}
 
 
     \chapter{Menù}
@@ -121,14 +130,14 @@
     All'interno della dispensa, divisi in sezioni, potete inserire degli articoli: cose che avete nella vostra cucina, con un nome, una data di
     scadenza (opzionale) e una quantità\footnote{Anche non intera, come 1,5.} (opzionale).
 
-    \section{Sezioni}
+	\section{Sezioni} \label{storagearticles}
 
     Come detto in precedenza, gli articoli possono essere raggruppati in sezioni, che potete vedere cliccando sul pulsante \emph{Dispensa} nella
     pagina principale.
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=0.45\textwidth]{assets/it/sections.png}
+        \includegraphics[width=0.45\textwidth]{assets/it/storage.png}
         \caption{Panoramica della dispensa}
     \end{figure}
 
@@ -137,7 +146,8 @@
 
     \section{Articoli}
 
-    Per vedere gli articoli in una sezione basterà cliccarla (e, in caso, cercare per nome).
+	Per vedere gli articoli (di una sezione, o tutti in generale) basterà cliccare il pulsante apposito. Se necessario, è possibile fare una ricerca
+	per nome.
 
     Gli articoli sono ordinati in base alla loro data di scadenza; gli articoli scaduti sono contrassegnati da una banda rossa a sinistra, invece
     della solita banda arancione.
@@ -158,11 +168,14 @@
     \section{Modifica di articoli}
 
     Per modificare un articolo dovete cliccare su di esso. Fatto ciò, questo verrà mostrato con due frecce (o bottoni vuoti) e un bottone
-    \emph{Elimina}; i bottoni con le frecce servono per scorrere tra gli articoli nella sezione, nello stesso ordine della lista a vista.
+    \emph{Elimina}; i bottoni con le frecce servono per scorrere tra gli articoli, nello stesso ordine della lista precedente.
 
     Se volete eliminare un articolo, potete semplicemente cliccare sul bottone; se volete modificarlo, potete farlo direttamente: una volta che
     qualcosa è stato modificato, i tre bottoni verranno nascosti e verranno mostrati i bottoni \emph{Salva} e \emph{Annulla}, in modo da confermare
-    (o annullare) le modifiche, per poi procedere con gli altri articoli. Cambiando la data di scadenza di un articolo è possibile che l'ordine cambi: in questo caso sarete reindirizzati alla lista.
+    (o annullare) le modifiche, per poi procedere con gli altri articoli. Cambiando la data di scadenza di un articolo è possibile che l'ordine
+	cambi: in questo caso sarete reindirizzati alla lista.
+
+	\label{movearticle}È anche possibile spostare un articolo da una sezione all'altra, modificandone il valore in questa schermata.
 
     \begin{figure}[H]
         \centering
@@ -174,7 +187,7 @@
 
     \chapter{Lista della spesa}
 
-    È... la lista della spesa.
+    È... una lista della spesa.
 
     \section{Panoramica}
 
@@ -190,18 +203,18 @@
     questa cosa sarà visibile da tutti i dispositivi}, che rimarrà comunque nella lista; per eliminarlo potete cliccare sul tasto \emph{Elimina
     selezionati}.
 
-    Per aggiungere nuovi elementi potete usare il pulsante \emph{Aggiungi elementi}; per modificarne uno basterà cliccare sul nome.
+    Per aggiungere nuovi elementi potete usare il pulsante \emph{Aggiungi}; per modificarne uno basterà cliccare sul nome.
 
 
 
-    \chapter{Recipes} \label{recipes}
+    \chapter{Ricette} \label{recipes}
 
     Una ricetta è composta da un nome (l'unica componente obbligatorio), una valutazione (da 0,5 a 5,0 stelle), una lista di ingredienti, un
     procedimento e delle note aggiuntive.
 
-    \section{Overview}
+    \section{Panoramica}
 
-    Cliccando il pulsante \emph{Recipes} potrete vedere tutte le ricette salvate, e un bottone per crearne di nuove.
+    Cliccando il pulsante \emph{Ricette} potrete vedere tutte le ricette salvate, e un bottone per crearne di nuove.
 
     \begin{figure}[H]
         \centering
@@ -221,4 +234,23 @@
 
     Per nascondere le stelle potete impostarne il numero a 0. Quando scrivete gli ingredienti e il procedimento, ricordatevi di andare a capo per
     vederli formattati correttamente.
+
+	\section{Condivisione} \label{recipesharing}
+
+	Nel caso in cui vogliate condividere una ricetta con altri, è possibile farlo in due modi, entrambi accessibili dal tasto apposito.
+	Il primo è quello di cliccare poi il tasto \emph{Stampa}, e inviargli il pdf.
+
+	Il secondo, e più flessibile, è quello di rendere la vostra ricetta pubblica generando un link, attraverso il quale chiunque lo abbia potrà
+	vedere la vostra ricetta, comprese le modifiche che farete dopo la condivisione. Nel caso in cui cambiaste idea poi, la ricetta si può rendere
+	privata in qualsiasi momento.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.45\textwidth]{assets/it/recipe_sharing.png}
+        \caption{Una ricetta condivisa}
+    \end{figure}
+
+	Gli utenti registrati possono salvare nel loro account una copia delle ricette pubbliche; in questo caso, le modifiche non saranno sincronizzate,
+	ma la copia rimarrà anche nel caso l'originale torni privata.	
+
 \end{document}
