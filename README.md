@@ -6,6 +6,16 @@ This repository contains the tutorials for
 Right now, it's available in two languages, English and Italian, but the
 content is identical.
 
-For simplicity, the images names are the same for all the languages.
 
-The ruler is set to 150 characters.
+**Notes**
+
+- The ruler is set to 80 characters.
+
+- Images names are the same for all the languages.
+
+- Screenshots are made with this setup:
+  + Browser: Firefox
+  + Display size: 810x1080px
+  + Removed `<nav>` and `<footer>`
+  + Set `padding: 30px;` to `<main>`
+  + Clik `Screenshot node` to `<main>`

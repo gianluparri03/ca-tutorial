@@ -1,5 +1,6 @@
-\documentclass[12pt, a4paper]{report}
+\documentclass[12pt, a4paper]{article}
 \usepackage[english]{babel}
+\usepackage[margin=1.75cm]{geometry}
 \usepackage{float}
 \usepackage{graphicx}
 \usepackage{hyperref}
@@ -9,9 +10,9 @@
 
 \begin{document}
     \title{
-        \includegraphics[width=0.4\textwidth]{assets/logo.png}\\
-        [1cm]CucinAssistant: How to\\
-        \large updated to version \emph{7 (Ciliegia)}
+        \includegraphics[width=0.2\textwidth]{assets/logo.png}\\
+        [0.5cm]CucinAssistant: How to\\
+        \large updated to version \emph{8 (Banana)}
     }
     \author{Gianluca Parri}
     \date{\today}
@@ -21,57 +22,53 @@
 
     \tableofcontents
     \vfill
-    \noindent For errors and suggestions you can write at \href{mailto:info@cucinassistant.com}{\mbox{info@cucinassistant.com}}.
+    \noindent For errors and suggestions you can write at
+    \href{mailto:info@cucinassistant.com}{\mbox{info@cucinassistant.com}}.
 
 
 
-    \chapter{News}
+    \section{News}
     
-    Since the last version (\emph{6 (Zucchina)}) CucinAssistant had the following changes
+    Since the last version (\emph{7 (Ciliegia)}), CucinAssistant had the
+    following changes:
 
     \begin{itemize}
-		\item Recipe sharing (\ref{recipesharing})
-		\item General view of the storage (\ref{storagearticles})
-		\item Moving articles between sections (\ref{movearticles})
-		\item Added \emph{Print} buttons
-		\item Unsubscription from the newsletter (\ref{newsletter})
+        \item Menu structure customizable (\ref{menus})
+        \item Changed all the icons
     \end{itemize}
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=0.45\textwidth]{assets/ciliegie.jpg}
-		\caption{\emph{Ciliegie}. Photo from \href{https://upload.wikimedia.org/wikipedia/commons/9/94/Black_Che.jpg}{here}.}
+        \includegraphics[width=0.45\textwidth]{assets/banane.jpg}
+		\caption{\emph{Banane}. Photo from \href{https://commons.wikimedia.org\
+            /wiki/File:Cavendish_banana_from_Maracaibo.jpg}{here}.}
     \end{figure}
 
 
-    \chapter{Introduction}
+    \section{Introduction}
 
-    \section{Changing the language} \label{changelang}
+    \subsection{Language setting}
 
-    If, when opened, CucinAssistant was in a different language, you could change it\footnote{The new language will be set in the device only, it's
-    not saved in your account. Therefore, if you have a shared account, you could use it in different languages} anytime.
+    You can change CucinAssistant's language anytime by clicking on the icon at
+    the logo's left, on the navigation bar on the top of every page.
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.45\textwidth]{assets/nav.png}
-        \caption{Navigation bar: on the left (in most of the pages) there is a the home button; on the right, \emph{in every page} there is the
-        \emph{change language} button.}
     \end{figure}
 
-    \section{Sign up and sign in}
+    \subsection{Sign up and sign in}
 
-    Now it's time to sign in.
+    If you already have an account you can fill in the form on the sign in page
+    straight away; on the other hand, you can sign up using the button below.
 
-    If you already have an account you can fill the form on the sign in page straight away; on the other hand, if this is your first time on
-    CucinAssistant, you can sign up using the button below.
-
-    If you have an account, but you've lost your username and/or your password, you can use the \emph{Forgot password} button, that will send you an
+    If you have an account, but you've lost your username and/or your password,
+    you can use the \emph{Forgot password} button, that will send you an
     email containing both the username and a link to reset your password.
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.45\textwidth]{assets/en/signin.png}
-        \caption{Sign in page}
     \end{figure}
 
     Once signed in, you'll gain access to the \emph{homepage}.
@@ -79,170 +76,176 @@
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.45\textwidth]{assets/en/home.png}
-        \caption{Home page}
     \end{figure}
 
-    \section{Settings}
+    \subsection{Settings}
 
-    The settings page contains a button to sign out, some buttons to change your username, email or password, and a button to permanently delete your
-    account.
-
-	\label{newsletter} There is also a button to change the email settings, which are the newsletter subscription and the language of the emails.
-	Note that the email language is not related to the website language.
+    The settings page contains a button to sign out, some buttons to change
+    your personal data (username, email and password), your email preferences
+    (language and newsletter consent), and a button to permanently
+    delete your account.
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.45\textwidth]{assets/en/settings.png}
-        \caption{Settings page}
     \end{figure}
 
 
-    \chapter{Menus}
+    \section{Menus} \label{menus}
 
-    A menu is composed of a name and 14 meals, two per day for a week.
+    \subsection{Creation}
 
-    \section{Overview}
-
-    From your homepage, with the \emph{Menus} button, you can see your menus (in order of creation) and create new ones.
+    By clicking the \emph{New menu} button, you will be able to create a new
+    menu, specifiying which days are included and the number of meals per day.
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=0.45\textwidth]{assets/en/menus.png}
-        \caption{The menus dashboard}
+        \includegraphics[width=0.45\textwidth]{assets/en/menu_new.png}
     \end{figure}
 
-    Once clicked on a menu, you can see its content, and if you want edit or clone it. To delete it, you have to click the \emph{Edit} button first.
+    \subsection{Editing}
+
+    To edit a menu, you can click the \emph{Edit} button.
+
+    Once clicked, you will be able to edit the menu's name and delete it;
+    furthermore, you'll see a series of buttons used to edit each day.
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=0.45\textwidth]{assets/en/menu.png}
-        \caption{A sample menu}
+        \includegraphics[width=0.45\textwidth]{assets/en/menu_edit.png}
+    \end{figure}
+
+    In the \emph{Edit day} page you will be able to change the day's name, or
+    change its meals, adding or removing them if you need.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.45\textwidth]{assets/en/menu_day.png}
     \end{figure}
 
 
 
-    \chapter{Storage}
+    \section{Storage}
 
-    This is by far the most articulated part of CucinAssistant.
+    Inside the storage, you can save articles, with a name, an expiration date
+    (optional) and a quantity (integer or decimal; optional).
 
-    Inside the storage, divided in sections, you can store articles, that are things you have in your kitchen, with a name, an optional expiration
-    date and an optional quantity\footnote{Also a not integer one, like 1.5.}.
+	\subsection{Sections}
 
-	\section{Sections} \label{storagearticles}
-
-    As said before, the articles can be grouped into sections, which you will see by clicking the \emph{Storage} button on your home page.
+    The articles can be grouped into sections, which you will any time you open
+    the \emph{Storage}.
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.45\textwidth]{assets/en/storage.png}
-        \caption{The storage dashboard}
     \end{figure}
 
-    You can create new sections with the button in the dashboard; to edit (or delete them) you have to open them and click the \emph{Edit section}
+    You can create new sections with the button in the dashboard; to edit or
+    delete one of them you have to open it and click the \emph{Edit section}
     button.
 
-    \section{Articles}
+    \subsection{Articles}
 
-    You can see the articles of each section (or all of them) by clicking on it. If you want, search for a name.
+    You can see the articles of each section (or all of them) by opening it.
+    If you want, you can search for a name.
 
-    Articles are ordered by their expiration date; the expired ones will have a red band on the left, instead of the common orange one.
+    Articles are ordered by their expiration date; the expired ones will have a
+    red band on the left, instead of the orange one.
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.45\textwidth]{assets/en/articles.png}
-        \caption{An example section}
     \end{figure}
 
-    You can add articles both from inside a section and outside a section; in the latter case, for each article added you'll also have to specify in
-    which section to put each article.
+    You can add articles both from inside a section and outside a section; in
+    the latter case, for each article to add you'll have to specify in which
+    section to save it.
 
-    Remember that an article is identified by its name and expiration, so if you'll try to add an article that you already have in storage,
-    CucinAssistant will add the quantities, and not create duplicates. On the other hand, if the expiration date differs, it will create another
-    article.
+    An article is identified by its name and expiration date, so if you'll try
+    to add an article that you already have in storage, CucinAssistant will sum
+    the quantities, and not create duplicates. 
 
-    \section{Articles editing}
+    \subsection{Articles editing}
 
-    To edit an article you have to click on it. After that, you'll see it alone, with some arrows (or blank buttons) and a \emph{Delete} button.
-    The arrows button are there to make you scroll across each article in the same order as before.
+    By clicking on an article, you'll see it alone with some arrows (used for
+    scrolling between articles) and a \emph{Delete} button.
 
-    If you want to delete an article, you can simply click the button; if you want to edit it, you can do it directly: once something has changed,
-    the three buttons will hide, and a \emph{Save} and \emph{Discard} buttons will be shown, so that you can confirm or not your changes and then
-    proceed with the other articles.
-    Note that if you change an expiration date, the order may change: in this case, you'll be redirected at the list view.
+    Once you've changed some data, the buttons will be replaced with a
+    \emph{Save} and a \emph{Discard} button, used to confirm your changes.
+    If you change the section, the article will be moved.
 
-	\label{movearticles} It is also possible to move an article between two sections by just editing the section's value in this page.
+    When changing an expiration date, the order of the articles may change: in
+    this case, you'll be redirected at the list view.
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.45\textwidth]{assets/en/article.png}
-        \caption{An example article being edited, before any changes}
     \end{figure}
 
 
 
-    \chapter{Shopping List}
+    \section{Shopping List}
+
+    \subsection{Overview}
 
     It's just... a list of things to buy.
-
-    \section{Overview}
-
-    Once you've opened the list, you'll see all your entries.
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.45\textwidth]{assets/en/shopping_list.png}
-        \caption{A shopping list}
     \end{figure}
 
-    When you buy something, you can click on the checkbox at the left of the entry, and it will become selected\footnote{As everything on
-    CucinAssistant, the change will be seen on every device}, but will remain on the list; to remove it permanently you have to click the
-    \emph{Delete selected}.
+    When you click the checkbox at the left of the entry, it will become
+    checked, but will remain on the list; to remove all the checked ones you'll
+    have to click the \emph{Delete selected} button.
 
-    To add new items you can click the \emph{Add} button; to edit one of them, just click on its name.
+    To add new items you can click the \emph{Add} button; to edit one of them,
+    just click on its name.
 
 
 
-    \chapter{Recipes} \label{recipes}
+    \section{Recipes}
 
-    A recipe has a name (the only compulsory field), and can have a rating (0.5 to 5.0 stars), some ingredients, some directions and some notes.
+    A recipe has a name (the only compulsory field), and a rating (0.5 to 5.0
+    stars), some ingredients, some directions and some notes.
 
-    \section{Overview}
+    \subsection{Overview}
 
-    When you click the \emph{Recipes} button you'll see all the saved recipies you have and a button to create new ones.
+    When you click the \emph{Recipes} button you'll see all your recipes and a
+    button to create new ones.
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.45\textwidth]{assets/en/recipes.png}
-        \caption{A list of recipes}
     \end{figure}
 
-    To see one in detail, just click on it and you will see it (with only the non-empty fields).
+    To see one in detail, just click on it.
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.45\textwidth]{assets/en/recipe.png}
-        \caption{An example recipe}
     \end{figure}
 
     To edit or delete it, just click on the \emph{Edit} button.
 
-    To hide the stars you can set the stars number to 0. When writing ingredients or directions, remember to write them in multiple lines in order to
-    see the numbers/dots correctly.
+    To ensure a correct formatting, make sure to write the ingredients and the
+    directions in multiple lines.
 
-	\section{Sharing} \label{recipesharing}
+    To hide the stars you can set the stars number to 0.
 
-	If you'd like to share a recipe with someone, you have two ways; for both of them, you have to click the \emph{Share} button.
-	The first way, is to print it as pdf, and then send it to them.
-	The second one, is making it public by generating a link, and sending it to them (they don't have to be registered to CucinAssistant).
-	In this way, even if you change something, they will see your changes. Then, if you decide not to share it anymore, you can always make it
-	private by removing the link.
+	\subsection{Sharing}
+
+	If you'd like to share a recipe you can click the \emph{Share} button, and
+    you will able to download a pdf, or generate a link (that can be revoked
+    anytime), with which anybody can see your recipe. If shared with a link,
+    every edit you make will be seen by everyone.
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.45\textwidth]{assets/en/recipe_sharing.png}
-        \caption{A shared recipe}
     \end{figure}
 
-	Registered users can save in their account a copy of public recipes. If they do so, the owner's changes won't be forwarded to the copies, but the
-	copies will remain even if the original is made private.
+	Registered users can save a copy of a recipe shared with a link. If they do
+    so, the owner's changes won't be forwarded to the copies, but the
+	copies will remain even if the original link is revoked.
 \end{document}

@@ -1,5 +1,6 @@
-\documentclass[12pt, a4paper]{report}
+\documentclass[12pt, a4paper]{article}
 \usepackage[italian]{babel}
+\usepackage[margin=1.75cm]{geometry}
 \usepackage{float}
 \usepackage{graphicx}
 \usepackage{hyperref}
@@ -9,9 +10,9 @@
 
 \begin{document}
     \title{
-        \includegraphics[width=0.4\textwidth]{assets/logo.png}\\
-        [1cm]CucinAssistant: Guida all'utilizzo\\
-        \large aggiornata alla versione \emph{7 (Ciliegia)}
+        \includegraphics[width=0.2\textwidth]{assets/logo.png}\\
+        [0.5cm]CucinAssistant: Guida all'utilizzo\\
+        \large aggiornata alla versione \emph{8 (Banana)}
     }
     \author{Gianluca Parri}
     \date{\today}
@@ -21,58 +22,54 @@
 
     \tableofcontents
     \vfill
-    \noindent Per segnalare errori o suggerimenti potete scrivere a \href{mailto:info@cucinassistant.com}{\mbox{info@cucinassistant.com}}.
+    \noindent Per segnalare errori o suggerimenti potete scrivere a
+    \href{mailto:info@cucinassistant.com}{\mbox{info@cucinassistant.com}}.
 
 
 
-    \chapter{Novità}
+    \section{Novità}
     
-    Le modifiche apportate a CucinAssistant dall'ultima versione (\emph{6, Zucchina}) sono qui riassunte:
+    Dall'ultima versione (\emph{7, Ciliegia}) sono state apportate le seguenti
+    modifiche:
 
     \begin{itemize}
-		\item Condivisione di ricette (\ref{recipesharing})
-		\item Visione generale della dispensa (\ref{storagearticles})
-		\item Possibilità di spostare gli articoli in altre sezioni (\ref{movearticle})
-		\item Aggiunti pulsanti \emph{Stampa}
-		\item Possibilità di disiscriversi dalla newsletter (\ref{newsletter})
+        \item Struttura dei menù personalizzabile (\ref{menus})
+        \item Cambiate tutte le icone
     \end{itemize}
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=0.45\textwidth]{assets/ciliegie.jpg}
-		\caption{\emph{Ciliegie}. Foto da \href{https://upload.wikimedia.org/wikipedia/commons/9/94/Black_Che.jpg}{qui}.}
+        \includegraphics[width=0.45\textwidth]{assets/banane.jpg}
+		\caption{\emph{Banane}. Foto da \href{https://commons.wikimedia.org/wi\
+                ki/File:Cavendish_banana_from_Maracaibo.jpg}{qui}.}
     \end{figure}
 
 
-    \chapter{Introduzione}
+    \section{Introduzione}
 
-    \section{Cambio lingua} \label{changelang}
+    \subsection{Cambio lingua}
 
-    Innanzitutto, se all'apertura di CucinAssistant quest'ultimo non fosse in italiano (o qualsiasi altra lingua preferite), potete sempre cambiarla
-    \footnote{La lingua scelta verrà impostata solo per il dispositivo attuale; non viene salvata a livello di account. Se avete un account condiviso
-    potrete quindi utilizzare lo stesso account e visualizzare il sito in due lingue diverse.} cliccando il tasto apposito.
+    È possibile cambiare la lingua di visualizzazione in ogni momento cliccando
+    il tasto apposito sulla barra di navigazione in alto.
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.45\textwidth]{assets/nav.png}
-        \caption{Barra di navigazione: a sinistra del logo (nella maggiorparte delle pagine) è presente il pulsante per tornare alla home; a destra
-        del logo invece - \emph{in tutte le pagine} - è presente il tasto per cambiare lingua.}
     \end{figure}
 
-    \section{Registrazione e accesso}
+    \subsection{Registrazione e accesso}
 
-    Una volta impostata la lingua corretta, è ora di effettuare l'accesso.
-    
-    Se avete già un account potete inserire fin da subito le vostre credenziali nella pagina di accesso; nel caso in cui non vi foste mai registrati
-    potete cliccare il pulsante \emph{Registrati} per farlo.
+    Se avete già un account potete inserire le vostre credenziali nella pagina
+    di accesso; altrimenti potete cliccare il pulsante \emph{Registrati} per
+    crearne uno nuovo.
 
-    In ultimo, nel caso aveste dimenticato il nome utente e/o la password, potete usare la funzione \emph{Password dimenticata}, che vi invierà una
-    email contenente il nome utente e un link per resettare la password.
+    Nel caso aveste dimenticato il nome utente e/o la password, cliccando il
+    tasto \emph{Password dimenticata}, vi verrà inviata una email contenente il
+    nome utente e un link per cambiare la password.
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.45\textwidth]{assets/it/signin.png}
-        \caption{Pagina di accesso}
     \end{figure}
 
     Una volta entrati, avrete accesso alla \emph{homepage}.
@@ -80,177 +77,183 @@
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.45\textwidth]{assets/it/home.png}
-        \caption{Pagina principale}
     \end{figure}
 
-    \section{Impostazioni}
+    \subsection{Impostazioni}
 
-    Nelle impostazioni, oltre ad il tasto per disconnettervi, troverete anche dei bottoni per cambiare nome utente, email e password, eliminare
-    l'account in maniera definitiva, ed un altro per accedere alle impostazioni delle email.
-
-	\label{newsletter}Quest'ultimo pulsante vi porterà in una pagina in cui sarà possibile iscriversi o disiscriversi dalla newsletter, e impostare
-	la lingua di tutte le email che vi arriveranno, che è indipendente dalla lingua di visualizzazione del sito.
+    Dalle impostazioni è possibile disconnettersi, cambiare i dati personali
+    (nome utente, email, password), le preferenze sulle email
+    (lingua e consenso alla newsletter) ed eliminare definitivamente l'account.
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.45\textwidth]{assets/it/settings.png}
-        \caption{Pagina di impostazioni}
     \end{figure}
 
 
-    \chapter{Menù}
+    \section{Menù} \label{menus}
 
-    I menù sono formati da un nome e 14 pasti, due al giorno per una settimana.
+    \subsection{Creazione}
 
-    \section{Panoramica}
-
-    Dalla panoramica dei menù potrete vedere tutti i menù creati in precedenza (in ordine cronologico) e crearne di nuovi.
+    Cliccando il tasto apposito è possibile creare un nuovo menù, specificando
+    i giorni inclusi e il numero di pasti per ogni giorno (poi modificabile in)
+    seguito.
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=0.45\textwidth]{assets/it/menus.png}
-        \caption{Panoramica dei menù salvati}
+        \includegraphics[width=0.45\textwidth]{assets/it/menu_new.png}
     \end{figure}
 
-    Una volta cliccato un menù potrete vederne il contenuto, e all'occorrenza modificarlo o duplicarlo. Per eliminarlo basterà cliccare
-    prima il tasto \emph{Modifica}.
+    \subsection{Modifica}
+
+    Per modificare il contenuto del menù è sufficiente cliccare il tasto
+    \emph{Modifica}.
+    
+    Dalla pagina che si aprirà sarà possibile modificare il nome del menù o
+    eliminarlo; inoltre, saranno presenti una serie di pulsanti che
+    permetteranno di modificare giorno per giorno.
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=0.45\textwidth]{assets/it/menu.png}
-        \caption{Un esempio di menù}
+        \includegraphics[width=0.45\textwidth]{assets/it/menu_edit.png}
+    \end{figure}
+
+    Nella pagina di modifica del giorno è possibile cambiarne il nome o i
+    pasti, aggiungendoli o eliminandoli all'occorrenza.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.45\textwidth]{assets/it/menu_day.png}
     \end{figure}
 
 
 
-    \chapter{Dispensa}
+    \section{Dispensa}
 
-    Questa è la sezione più articolata di CucinAssistant.
+    All'interno della dispensa potete inserire degli articoli con un nome, una
+    data di scadenza (opzionale) e una quantità (intera o decimale; opzionale).
 
-    All'interno della dispensa, divisi in sezioni, potete inserire degli articoli: cose che avete nella vostra cucina, con un nome, una data di
-    scadenza (opzionale) e una quantità\footnote{Anche non intera, come 1,5.} (opzionale).
+	\subsection{Sezioni}
 
-	\section{Sezioni} \label{storagearticles}
-
-    Come detto in precedenza, gli articoli possono essere raggruppati in sezioni, che potete vedere cliccando sul pulsante \emph{Dispensa} nella
-    pagina principale.
+    Gli articoli saranno raggruppati in sezioni, visibili all'apertura della
+    \emph{Dispensa}.
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.45\textwidth]{assets/it/storage.png}
-        \caption{Panoramica della dispensa}
     \end{figure}
 
-    Potete creare nuove sezioni con il pulsante apposito; per modificare (o eliminare) una sezione dovrete aprirla e cliccare sul pulsante
+    Potete creare nuove sezioni con il pulsante apposito; per modificarne
+    o eliminarne una sarà necessario aprirla e cliccare sul pulsante
     \emph{Modifica sezione}.
 
-    \section{Articoli}
+    \subsection{Articoli}
 
-	Per vedere gli articoli (di una sezione, o tutti in generale) basterà cliccare il pulsante apposito. Se necessario, è possibile fare una ricerca
+	Per vedere gli articoli (di una sezione, o tutti in generale) basterà
+    cliccare il pulsante apposito. Se necessario, è possibile fare una ricerca
 	per nome.
 
-    Gli articoli sono ordinati in base alla loro data di scadenza; gli articoli scaduti sono contrassegnati da una banda rossa a sinistra, invece
-    della solita banda arancione.
+    Gli articoli sono ordinati in base alla loro data di scadenza; quelli
+    scaduti sono contrassegnati da una banda laterale rossa al posto di quella
+    arancione.
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.45\textwidth]{assets/it/articles.png}
-        \caption{Una sezione di esempio}
     \end{figure}
 
-    Potete aggiungere articoli sia dall'interno della sezione che dall'esterno di essa; nell'ultimo caso, per ogni articolo è necessario specificare
-    la sezione in cui deve essere salvato.
+    È possibile aggiungere articoli sia dall'interno di una sezione che dalla
+    pagina principale: in questo caso, per ogni articolo è necessario
+    specificare la sezione in cui deve essere salvato.
 
-    Ricordate che un articolo è identificato dal nome e dalla data di scadenza, quindi se proverete ad aggiungere un articolo che avete già nella
-    dispensa, CucinAssistant sommerà le quantità e non creerà duplicati; nel caso in cui la data di scadenza non coincida, verrà creato un nuovo
-    articolo.
+    Un articolo è identificato dal nome e dalla data di scadenza, quindi se
+    verrà inserito un articolo con stesso nome e data di scadenza di uno già in
+    dispensa, non verranno creati duplicati, ma le quantità verranno sommate.
 
-    \section{Modifica di articoli}
+    \subsection{Modifica di articoli}
 
-    Per modificare un articolo dovete cliccare su di esso. Fatto ciò, questo verrà mostrato con due frecce (o bottoni vuoti) e un bottone
-    \emph{Elimina}; i bottoni con le frecce servono per scorrere tra gli articoli, nello stesso ordine della lista precedente.
+    Cliccando su un articolo, questo verrà aperto e mostrato con due frecce
+    (per scorrere tra gli articoli) e un bottone \emph{Elimina}.
 
-    Se volete eliminare un articolo, potete semplicemente cliccare sul bottone; se volete modificarlo, potete farlo direttamente: una volta che
-    qualcosa è stato modificato, i tre bottoni verranno nascosti e verranno mostrati i bottoni \emph{Salva} e \emph{Annulla}, in modo da confermare
-    (o annullare) le modifiche, per poi procedere con gli altri articoli. Cambiando la data di scadenza di un articolo è possibile che l'ordine
-	cambi: in questo caso sarete reindirizzati alla lista.
-
-	\label{movearticle}È anche possibile spostare un articolo da una sezione all'altra, modificandone il valore in questa schermata.
+    Una volta cambiati dei dati, i pulsanti precedenti verranno sostituiti da
+    \emph{Salva} e \emph{Annulla}, per confermare le modifiche effettuate.
+    Cambiando la sezione l'articolo verrà spostato.
+    
+    Cambiando la data di scadenza di un articolo è possibile che l'ordine
+    cambi: in questo caso si tornerà alla visualizzazione a lista.
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.45\textwidth]{assets/it/article.png}
-        \caption{Un articolo di esempio che viene modificato, prima di ogni modifica}
     \end{figure}
 
 
 
-    \chapter{Lista della spesa}
+    \section{Lista della spesa}
+
+    \subsection{Panoramica}
 
     È... una lista della spesa.
-
-    \section{Panoramica}
-
-    Una volta che avete aperto la lista, potrete vedere tutti gli elementi aggiunti.
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.45\textwidth]{assets/it/shopping_list.png}
-        \caption{Una lista della spesa}
     \end{figure}
 
-    Quando comprate qualcosa, cliccando sul quadrato a sinistra del nome potrete spuntare quell'elemento\footnote{Come tutto su CucinAssistant,
-    questa cosa sarà visibile da tutti i dispositivi}, che rimarrà comunque nella lista; per eliminarlo potete cliccare sul tasto \emph{Elimina
-    selezionati}.
+    Cliccando sul quadrato a sinistra del nome di un elemento, questo verrà
+    spuntato, ma rimarrà in lista; per eliminare tutti gli elementi spuntati
+    basterà cliccare il tasto apposito.
 
-    Per aggiungere nuovi elementi potete usare il pulsante \emph{Aggiungi}; per modificarne uno basterà cliccare sul nome.
+    Per aggiungere nuovi elementi potete usare il pulsante \emph{Aggiungi}; per
+    modificarne uno basterà cliccare sul nome.
 
 
 
-    \chapter{Ricette} \label{recipes}
+    \section{Ricette}
 
-    Una ricetta è composta da un nome (l'unica componente obbligatorio), una valutazione (da 0,5 a 5,0 stelle), una lista di ingredienti, un
+    Una ricetta è composta da un nome (l'unica componente obbligatorio), una
+    valutazione (da 0,5 a 5,0 stelle), una lista di ingredienti, un
     procedimento e delle note aggiuntive.
 
-    \section{Panoramica}
+    \subsection{Panoramica}
 
-    Cliccando il pulsante \emph{Ricette} potrete vedere tutte le ricette salvate, e un bottone per crearne di nuove.
+    Cliccando il pulsante \emph{Ricette} potrete vedere tutte le ricette
+    salvate, e un bottone per crearne di nuove.
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.45\textwidth]{assets/it/recipes.png}
-        \caption{Una lista di ricette}
     \end{figure}
 
-    Per vederne una in dettaglio basterà cliccarla, e vedrete tutte le sue componenti (tutte quelle che non sono vuote).
+    Per vederne una in dettaglio basterà cliccarla.
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.45\textwidth]{assets/it/recipe.png}
-        \caption{Una ricetta di esempio}
     \end{figure}
 
     Per modificarla o eliminarla potete cliccare sul pulsante \emph{Modifica}.
 
-    Per nascondere le stelle potete impostarne il numero a 0. Quando scrivete gli ingredienti e il procedimento, ricordatevi di andare a capo per
-    vederli formattati correttamente.
+    Per una formattazione corretta, è importante ricordarsi di andare a capo
+    durante la scrittura degli ingredienti e del procedimento.
 
-	\section{Condivisione} \label{recipesharing}
+    Per nascondere le stelle potete impostarne il numero a 0.
 
-	Nel caso in cui vogliate condividere una ricetta con altri, è possibile farlo in due modi, entrambi accessibili dal tasto apposito.
-	Il primo è quello di cliccare poi il tasto \emph{Stampa}, e inviargli il pdf.
+	\subsection{Condivisione}
 
-	Il secondo, e più flessibile, è quello di rendere la vostra ricetta pubblica generando un link, attraverso il quale chiunque lo abbia potrà
-	vedere la vostra ricetta, comprese le modifiche che farete dopo la condivisione. Nel caso in cui cambiaste idea poi, la ricetta si può rendere
-	privata in qualsiasi momento.
+	Nel caso in cui vogliate condividere una ricetta, cliccando il tasto
+    \emph{Condividi}, sarà possibile sia ottenerne una versione pdf, sia
+    generare un link di condivisione (poi revocabile in seguito), tramite il
+    quale sarà possibile accedere alla ricetta. Se condivisa tramite link, ogni
+    modifica fatta alla ricetta sarà visibile anche a tutti coloro che hanno il
+    link.
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.45\textwidth]{assets/it/recipe_sharing.png}
-        \caption{Una ricetta condivisa}
     \end{figure}
 
-	Gli utenti registrati possono salvare nel loro account una copia delle ricette pubbliche; in questo caso, le modifiche non saranno sincronizzate,
-	ma la copia rimarrà anche nel caso l'originale torni privata.	
-
+	Gli utenti registrati possono salvare nel loro account una copia di una
+    ricetta condivisa tramite link; in questo caso le modifiche non saranno
+    sincronizzate, ma la copia rimarrà anche nel caso il link venga revocato.
 \end{document}
